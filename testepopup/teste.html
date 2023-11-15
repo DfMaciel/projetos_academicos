@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dicionario.css">
+    <title>+Libras - Dicionario</title>
+    <script>
+        function fechar() {
+            document.getElementById('popup').style.display="none";
+        }
+        const cor = (param) => {
+            let a = document.getElementById("popup");
+    
+            if (param == "azul"){
+                a.style.backgroundColor = "blue";
+                document.getElementById('popup').style.display='block';
+            }
+    
+            if (param == "verde"){
+                a.style.backgroundColor = "green";
+                document.getElementById('popup').style.display='block';
+            }
+            
+            if (param == "amarelo"){
+                a.style.backgroundColor = "yellow";
+                document.getElementById('popup').style.display='block';
+            }
+    
+            if (param == "vermelho"){
+                a.style.backgroundColor = "red";
+                document.getElementById('popup').style.display='block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div id="popup">
+            <button id="botaofechar" onclick="fechar()">x</button>
+        </div>
+        </div>
+        <main>
+            <div id="titulo">
+                <h1>Dicionário</h1>
+            </div>
+            <div id="conteudo">
+                <button class="botaodic" onclick="cor(this.id)" id="azul">Azul</button>
+                <button class="botaodic" onclick="cor(this.id)" id="verde">Verde</button>
+                <button class="botaodic" onclick="cor(this.id)" id="amarelo">Amarelo</button>
+                <button class="botaodic" onclick="cor(this.id)" id="vermelho">Vermelho</button>
+            </div>
+        </main>
+    </div>
+    <footer></footer>
+</body>
+</html>

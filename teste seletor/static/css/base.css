@@ -1,0 +1,120 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #2cce78ec;
+    justify-content: flex-end;
+}
+
+.listanav{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.botoesnav {
+	background-color: #ffffffb4;
+	border-radius:12px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;  
+	font-size:13px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+    margin-right: 15px;
+}
+.botoesnav:hover {
+	background-color:#8aebb7;
+}
+ 
+ul li a{
+    color: rgb(0, 0, 0);
+    outline: none;
+    text-decoration: none;
+}
+
+.esquerda {
+    margin-right: auto;
+    
+}
+
+#logo {
+    display: flex;
+    padding-left: 20%;
+    align-items: center;
+}
+
+#fotologo {
+    width: 55px;
+    height: 55px;
+}
+
+#textologo {
+    padding-left: 10%;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+footer{
+    height: 60px;
+    margin-top: auto;
+    background-color: #2cce78ec;
+    color:#0f0f0f;  
+    width: 100%;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+.gitacess {
+    display: flex;  
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 15px;
+}
+
+#gitlogo {
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+}
+
+#linkgit {
+    color: rgb(0, 0, 0);
+    outline:     none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+h5 {
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}  

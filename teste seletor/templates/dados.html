@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}
+Estatísticas
+{% endblock %}
+
+{% block css %}
+rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}"
+{% endblock %}
+
+{% block content %}
+<main class="dados">
+    <div id="sidebar">
+        <ul class="sideitens">
+            <li class="liside"><img id="ideiaicon" src="{{url_for('static', filename='img/vector.png')}}">
+                <b class="topicbar" id="infosidebar">Informações</b></li>
+            <hr class="testehr">
+            <li class="liside"><img class="sideicons" src="{{url_for('static', filename='img/chaticon.png')}}">
+                <a class="topicbar" href="/info">Perguntas frequentes</a></li>
+            <hr class="testehr">
+            <li class="liside"><img class="sideicons" src="{{url_for('static', filename='img/dataicon.png')}}">
+                <a class="topicbar" href="/dados">Dados oficiais</a></li>
+        </ul>
+    </div>
+    <div id="direitadados">
+        <div id="conteudodados">           
+            <br>
+            <h1 class="margem">Dados oficiais</h1>
+            <h2 class="margem">Número de crianças em fila de transplante por região</h2>
+            <table border="3" class="tabela">
+                <thead>
+                    <tr>
+                        <th>Anos        </th>
+                        <th>Região      </th>
+                        <th>Ingressantes</th>
+                        <th>Transplante </th>
+                        <th>Óbitos      </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020</td>
+                        <td>SP</td>
+                        <td>573</td>
+                        <td>468</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>SP</td>
+                        <td>238</td>
+                        <td>227</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="margem">Número de óbitos por DRC em cada região (0 a 9 anos)</h2>
+            <table border="3" class="tabela">
+                <thead>
+                    <tr>
+                        <th>Região</th>
+                        <th>2015</th>
+                        <th>2016</th>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                    </tr>
+                
+                <tbody>
+                    <tr>
+                        <td>Norte</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Nordeste</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Centro-Oeste</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Sudeste</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Sul</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>  
+            
+            
+        </div>
+    </div>
+</main>
+
+{% endblock %}
