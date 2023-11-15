@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deixe sua opnião</title>
+</head>
+<link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark navbar-fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="solos.html">Solos favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opniões</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="content4">
+    <br>
+    <h1 class="texto"> Deixe a sua opnião!</h1>
+    <p class="paragraph"> Utilize o formulário abaixo para compartilhar sua opnião ou explicar algum ponto sobre os guitarristas e solos escolhidos!
+    </p>
+    <div id="opniao" class="container my-5 py-5 text-dark">
+      <div class="row d-flex justify-content-right">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="d-flex flex-start w-100">
+                <img class="rounded-circle shadow-1-strong me-3"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="65"
+                  height="65" />
+                <div class="w-100">
+                  <h5>Adicione um comentario!</h5>
+                  <div class="form-outline">
+                    <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                    <label class="form-label" for="textAreaExample">Qual a sua opnião?</label>
+                  </div>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button type="button" class="btn btn-success">Cancelar</button>
+                    <button type="button" class="btn btn-danger">
+                      Enviar <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
