@@ -1,2 +1,2 @@
-# projetos_academicos
-Conjunto de projetos e ideias desenvolvidas em ambiente acadêmico
+# Repositório de projetos
+Nesse repositório estão salvos meus projetos acadêmicos desenvolvidos
