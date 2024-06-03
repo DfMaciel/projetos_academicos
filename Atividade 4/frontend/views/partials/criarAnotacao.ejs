@@ -1,0 +1,16 @@
+<div class="criarAnotacao" id="criarAnotacao">
+    <div class="modalCriarAnotacao">
+        <div class="tituloSpan">
+            <h2>Criar anotação</h2>
+            <span class="close" id="fechaModal">&times;</span>
+        </div>
+        <form class="formAnotacao" method="POST">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" maxlength="40" required>
+            <label for="conteudo">Conteúdo</label>
+            <textarea id="conteudo" name="conteudo" maxlength="500" required></textarea>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+    <script src="/javascripts/anotacao/criarAnotacao.js" defer></script>
+</div>

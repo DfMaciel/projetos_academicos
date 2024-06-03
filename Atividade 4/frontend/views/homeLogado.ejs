@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/criarAnotacao.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/homePage.css">
+    <script src="/javascripts/cliente/autenticacao.js"></script>
+    <script src="/javascripts/anotacao/buscarAnotacao.js"></script>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <h1> Todas as anotações </h1>
+    <div class="containerNotas">
+        
+    </div>
+    <%- include('partials/criarAnotacao') %>
+    <script src="/javascripts/anotacao/modal.js" defer></script>
+</body>
+</html>

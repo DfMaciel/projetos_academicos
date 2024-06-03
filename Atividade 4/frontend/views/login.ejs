@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/global.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/loginCadastro.css">
+    <script src="/javascripts/cliente/login.js" defer></script>
+</head>
+<body>
+    <section class="cadastroSection">
+        <form action="/logar" method="POST" class="formLogin">
+            <h1> Login</h1>
+            <div class="inputsLogin">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br>
+                <input type="submit" class="botaoCadastro" value="Entrar"><br>
+            </div>
+            <a href="/cadastro">Não possui uma conta?</a>
+        </form>
+    </section>
+</body>
+</html>

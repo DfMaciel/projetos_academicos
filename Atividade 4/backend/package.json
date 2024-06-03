@@ -1,0 +1,27 @@
+{
+  "name": "Backend",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^16.11.10",
+    "ts-node": "10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "4.5.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:app": "ts-node-dev --respawn server.ts",
+    "typeorm": "typeorm-ts-node-commonjs"
+  }
+}
