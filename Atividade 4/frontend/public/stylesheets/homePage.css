@@ -4,3 +4,73 @@ h1 {
     margin-top: 1%;
     text-align: center;
 }
+
+.containerNotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.anotacao {
+    background-color: #d9ff93;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 1%;
+    width: 40%;
+    min-height: max-content;
+    color: rgb(82, 74, 74);
+}
+
+.anotacao h2 {
+    font-size: 1.8em;
+}
+
+.conteudoAnotacao {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.dataAnotacao {
+    font-size: 1.1em;
+    text-align: right;
+}
+
+.containerTarefas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.tarefa{
+    background-color: #d9ff93;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 1%;
+    width: 40%;
+    min-height: max-content;
+    color: rgb(82, 74, 74);
+}
+
+.tarefa h2 {
+    font-size: 1.8em;
+}
+
+.conteudoTarefa {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.dataTarefa {
+    font-size: 1.1em;
+    text-align: right;
+}

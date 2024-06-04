@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from 'typeorm';
 import Cliente from './cliente';
 
 @Entity({name: 'tarefa'})
@@ -12,7 +12,11 @@ export default class Tarefa {
 
     @Column({type: 'varchar', length: 400, nullable: false})
     tarefa_descricao: string
+
+    @Column({type: 'datetime', nullable: false})
+    tarefa_data: Date
     
-    @ManyToMany(() => Cliente, cliente => cliente.tarefa)
-    cliente: Cliente[]
+    @ManyToMany(type => Cliente, cliente => cliente.tarefas)
+    @JoinTable()
+    clientes: Cliente[];
 }

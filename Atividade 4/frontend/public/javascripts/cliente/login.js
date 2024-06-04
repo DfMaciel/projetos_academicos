@@ -24,7 +24,7 @@ form.addEventListener('submit', (event) => {
         console.log(data);
         alert('Login realizado com sucesso!');
         localStorage.setItem('token', data.cli_id);
-        window.location.href = '/homeLogado';
+        window.location.href = '/';
     })
     .catch(error => { 
         console.log(error);

@@ -4,6 +4,7 @@ import 'reflect-metadata';
 import { Connection } from './config/data-source'
 import CadastroRouter from './rotas/clienteRoutes';
 import AnotacaoRouter from './rotas/anotacaoRoutes'
+import TarefaRouter from './rotas/tarefaRoutes';
 
 const app = express();
 app.use(cors());
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(CadastroRouter)
 app.use(AnotacaoRouter)
+app.use(TarefaRouter)
 
 const conectar = async () => {
     try {

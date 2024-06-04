@@ -1,0 +1,22 @@
+<div class="criarTarefa" id="criarTarefa">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <div class="modalCriarTarefa">
+        <div class="tituloSpanTarefa">
+            <h2>Criar tarefa</h2>
+            <span class="closeTarefa" id="fechaModalTarefa">&times;</span>
+        </div>
+        <form class="formTarefa" method="POST">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" maxlength="40" required>
+            <label for="conteudo">Conteúdo</label>
+            <textarea id="conteudoTarefa" name="conteudo" maxlength="500" required></textarea>
+            <label for="usuarios">Usuários</label>
+            <select id="usuarios" name="usuarios" multiple="multiple" required></select>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+    <script src="/javascripts/tarefa/buscarUsuarios.js" defer></script>
+    <script src="/javascripts/tarefa/criarTarefa.js" defer></script>
+</div>

@@ -31,8 +31,8 @@ function MostrarNotas(notas) {
             anotacao.className = 'anotacao';
             anotacao.innerHTML = `
                 <h2>${nota.anotacao_titulo}</h2>
-                <p>${nota.anotacao_conteudo}</p>
-                <p>${formatarData(nota.anotacao_data)}</p>
+                <p class="conteudoAnotacao">${nota.anotacao_conteudo}</p>
+                <p class="dataAnotacao">${formatarData(nota.anotacao_data)}</p>
             `;
             containerNotas.appendChild(anotacao);
         }

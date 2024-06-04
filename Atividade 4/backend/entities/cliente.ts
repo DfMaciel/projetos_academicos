@@ -20,6 +20,6 @@ export default class Cliente {
     @OneToMany(() => Anotacao, anotacao => anotacao.cliente, {cascade: true})
     anotacao: Anotacao[]
 
-    @ManyToMany(() => Tarefa, tarefa => tarefa.cliente)
-    tarefa: Tarefa[]
+    @ManyToMany(type => Tarefa, tarefa => tarefa.clientes)
+    tarefas: Tarefa[];
 }
